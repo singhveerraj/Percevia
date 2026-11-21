@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Percevia",
+    "slug": "mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.rajveer_singh.percevia"    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d122c0a4-dd5d-4258-91d9-68dfdab0bafa"
+      }
+    },
+
+    "plugins": [
+  [
+    "expo-speech-recognition",
+    {
+      "microphonePermission": "Allow Percevia to listen to your questions.",
+      "speechRecognitionPermission": "Allow Percevia to recognise your speech."
+    }
+  ]
+]
+
+
+  }
+}

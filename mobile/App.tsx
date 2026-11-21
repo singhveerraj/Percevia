@@ -187,6 +187,7 @@ Compare it with the CURRENT frame. If the main subject has changed, describe the
       } catch {
         throw new Error("The analysis service returned an unreadable response.");
       }
+      console.log("BACKEND RESPONSE:", uploadResult.body);
 
       if (
         uploadResult.status < 200 ||
@@ -843,7 +844,7 @@ Compare it with the CURRENT frame. If the main subject has changed, describe the
             onPress={processImage}
             disabled={loading}
           >
-            <Text style={styles.captureText}>{mode === "ask" ? "Ask Percevia" : "Analyse Image"}</Text>
+            <Text style={styles.captureText}>Analyse Image</Text>
           </TouchableOpacity>
         </View>
       ) : (
@@ -1282,4 +1283,17 @@ const styles = StyleSheet.create({
     padding: 15,
     marginBottom: 5,
   },
+
+  secondaryAskButton: {
+  marginHorizontal: 22,
+  marginTop: 10,
+  marginBottom: 12,
+  paddingVertical: 13,
+  borderRadius: 14,
+  backgroundColor: "#1C414A",
+  borderWidth: 1,
+  borderColor: "#397C70",
+  alignItems: "center",
+  justifyContent: "center",
+},
 });
